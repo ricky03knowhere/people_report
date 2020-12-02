@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title>People Report (Demo)</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="assets/vendor/cooladmin/css/font-face.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/font-awesome-5/css/all.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/sweetalert/sweetalert2.min.css" rel="stylesheet" media="all">
+    <!-- Bootstrap CSS-->
+    <link href="assets/vendor/cooladmin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+
+    <link href="assets/vendor/cooladmin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="assets/vendor/cooladmin/vendor/vector-map/jqvmap.min.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="assets/vendor/cooladmin/css/theme.css" rel="stylesheet" media="all">
+    <link href="assets/css/style.css" rel="stylesheet" media="all">
+<link rel="shortcut icon" href="assets/img/20201201_135234.png" type="image/x-icon" />
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+
+        <!-- PAGE CONTAINER-->
+
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop2 head bg-info">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap2">
+                            <div class="logo d-block d-lg-none">
+                                <a href="#!">
+          							<h4 class="text-white" ><i class="fas fa-file-signature ml-1 mr-2" ></i>PeopleReport</h4>
+                                </a>                                
+                            </div>
+                            <div class="header-button2">
+                                <div class="header-button-item js-item-menu">
+                                    <i class="zmdi zmdi-search"></i>
+                                    <div class="search-dropdown js-dropdown bg-dark">
+                                        <form action="">
+                                            <input class="au-input au-input--full au-input--h65 bg-dark text-white" type="text" placeholder="Search for datas &amp; reports..." />
+                                            <span class="search-dropdown__icon">
+                                                <i class="zmdi zmdi-search"></i>
+                                            </span>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="header-button-item has-noti js-item-menu">
+                                    <i class="zmdi zmdi-notifications"></i>
+                                    <div class="notifi-dropdown js-dropdown bg-dark">
+                                        <div class="notifi__title">
+                                            <p>You have 3 Notifications</p>
+                                        </div>
+                                        <div class="notifi__item">
+                                            <div class="bg-c3 img-cir img-40">
+                                                <i class="zmdi zmdi-file-text"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>You got a new file</p>
+                                                <span class="date">April 12, 2018 06:50</span>
+                                            </div>
+                                        </div>
+                                        <div class="notifi__footer">
+                                            <a href="#">All notifications</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-button-item mr-0 js-sidebar-btn">
+                                    <i class="fa fa-angle-left closes butt"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+<div class="page-container2 pb-3">
+    <!-- BREADCRUMB-->
+    <section class="au-breadcrumb">
+        <div class="section__content section__content--p50">
+            <div class="container-fluid pt-2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="au-breadcrumb-content text-center">
+                            <div class="au-breadcrumb-left">
+                                <span class="au-breadcrumb-span my-2"><b>You are here :</b></span>
+                                <ul class="list-unstyled list-inline au-breadcrumb__list">
+ 								<i class="fa fa-tachometer-alt mr-1" ></i>Dashboard
+                                </ul>
+                            </div>
+                            <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#add">
+                                <i class="zmdi zmdi-plus"></i>tambah petugas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                    
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="addLabel" >
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="addLabel">Input Data</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+    
+    
+    <h3 class="text-center title-2 mt-2">petugas</h3>
+    
+    <hr>
+<form>
+    <div class="row mt-4 mb-0" >
+    <div class="col-6" >
+    <div class="form-group">
+    <label for="id_petugas" class="control-label mb-1">ID Petugas</label>
+    <input class="form-control"  type="number" name="id_petugas" required><br>
+    </div>
+    </div>
+    <div class="col-6" >
+    <div class="form-group">
+    <label for="nama_petugas" class="control-label mb-1">Nama Petugas</label>
+    <input class="form-control"  type="text" name="nama_petugas" required><br>
+    </div>
+    </div>
+    </div>
+    
+    <div class="row mt-0" >
+    <div class="col-6" >
+    <div class="form-group">
+    <label for="username" class="control-label mb-1">Username</label>
+    <input class="form-control" name="username" id="username" required>
+    </div>
+    </div>
+    
+    <div class="col-6" >
+    <div class="form-group">
+    <label for="password" class="control-label mb-1">Password</label>						
+    <input class="form-control" type="password" name="password" id="password">
+    </div>
+    </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-6" >
+    <div class="form-group">
+    <label for="telp" class="control-label mb-1">Telephone</label>						
+    <input class="form-control" type="number"  name="telp" id="telp">
+    </div>
+    </div>
+    <div class="col-6">
+    <div class="form-group">
+    <label for="level" class="control-label mb-1">Level</label>
+    <select class="form-control" name="level" id="level">
+    <option value="admin" >Admin</option>
+    <option value="petugas" >Petugas</option>
+    <option value="masyarakat" >Masyarakat</option>
+    </select>
+    </div>
+    </div>
+    
+    </div>
+    
+    <div class="form-group">
+    <label for="foto" class="control-label mb-1">Foto</label>						
+    <input class="form-control" type="file" name="picture" id="foto" required><br>
+    </div>				
+    
+    <div>
+    <button id="insert-button" class="btn btn-lg btn-info btn-block">
+    <i class="fa fa-edit fa-lg mr-1"></i>&nbsp;
+    <span id="payment-button-amount">Insert</span>
+    <span id="payment-button-sending" style="display:none;">Sending…</span>
+    </button>
+    </div>
+    </form>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="section__content section__content--p30 my-5">
+           <div class="container-fluid">
+    		 <div class="row justify-content-center list-items-center">
+               <div class="col-md-3" >
+               <aside class="profile-nav alt">
+               <section class="card main">
+               <div class="card-header user-header alt bg-dark">
+               <div class="media py-4">
+               <a href="#">
+               <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="user" src="assets/img/img1.jpg">
+               </a>
+               <div class="media-body">
+               <h3 class="text-light display-6">Stark</h3>
+               <p class="level" >admin</p>
+               </div>
+               </div>
+               </div>                    
+						
+
+
+               <div class="card bg-warning cont mx-3 mt-3 mb-4 text-center pb-1" >
+                                      <i class="fa fa-id-card-alt fa-3x text-white mt-3 mb-2" ></i><h5>111</h5>
+                                    </div>
+     
+               
+
+    <div class="card bg-success cont mx-3 mb-4 text-center pb-1" >
+                 	<i class="fab fa-whatsapp fa-3x text-white mt-3 mb-2" ></i><h5>082928285250</h5>
+          </div>
+
+
+               
+
+
+<div class="card bg-primary cont mx-3 mb-2 text-center pb-1" >
+     	<i class="fa fa-user-alt fa-3x text-white mt-3 mb-2" ></i><h5>Hayomi</h5>
+      </div>
+               	
+    
+               </section>
+               </aside>       
+               </div>
+
+                           <div class="col-md-9">
+
+                               <div class="row my-0">
+                               <div class="col-sm-6 col-md-4">
+                               <div class="overview-item overview-item--c3 py-4">
+                               <div class="overview__inner">
+                               <div class="overview-box clearfix">
+                               <div class="icon mb-3">
+                               <i class="fas fa-newspaper"></i>
+                               </div>
+                               <div class="text">
+                               <h2>9</h2>
+                               <span>Pengaduan Masuk</span>
+                               </div>
+                               </div>
+                               
+                               </div>
+                               </div>
+                               </div>
+                               <div class="col-sm-6 col-md-4">
+                               <div class="overview-item overview-item--c1 py-4">
+                               <div class="overview__inner">
+                               <div class="overview-box clearfix">
+                               <div class="icon mb-3">
+                               <i class="fas fa-question-circle"></i>
+                               </div>
+                               <div class="text">
+                               <h2>5</h2>
+                               <span>Belum Terverifikasi</span>
+                               </div>
+                               </div>
+
+                               </div>
+                               </div>
+                               </div>
+                               <div class="col-sm-6 col-md-4">
+                               <div class="overview-item overview-item--c2 py-4">
+                               <div class="overview__inner">
+                               <div class="overview-box clearfix">
+                               <div class="icon mb-3">
+                               <i class="fas fa-check-circle"></i>
+                               </div>
+                               <div class="text">
+                               <h2>2</h2>
+                               <span>Telah Terverifikasi</span>
+                               </div>
+                               </div>
+						
+								</div>
+                               </div>
+                               </div>
+                          </div>
+                               
+                               <div class="row act" >
+								<div class="col-sm-6 col-md-6" id="msy" >
+								  <div class="overview-item bg-info py-4">
+                               <div class="overview__inner">
+                               <div class="overview-box clearfix">
+                               <div class="icon">
+                               <i class="fas fa-file-contract"></i>
+                               </div>
+                               <div class="text tx">                  
+                               <h2>Verifikasi Pengaduan</h2>
+                               </div>
+                               </div>
+           
+                               </div>
+                               </div>
+                               </div>
+                               
+                               <div class="col-sm-6 col-md-6" >
+                               <div class="overview-item bg-danger py-4">
+                               <div class="overview__inner">
+                               <div class="overview-box clearfix">
+                               <div class="icon">
+                               <i class="fas fa-file-export"></i>
+                               </div>
+                               <div class="text tx">
+                               <h2>Generate Laporan</h2>                  
+                               </div>
+                               </div>
+                               
+                               </div>
+                               </div>
+                               </div>
+                               
+                               
+                               </div>
+            
+            							<div class="card bg-dark pt-4 user" >            				 
+            								<div class="row" >
+            								            				
+            								<div class="col-md-3 col-sm-6">
+            								<div class="card overview-item--c1" >
+            									<i class="fas fa-user-cog" ></i>
+            								</div>
+            								<h5 class="text-white" ><span class="tex-info h4 font-weight-bold" >3</span> Admin</h5>
+            								</div>
+        
+            								<div class="col-md-3 col-sm-6" >
+            								<div class="card overview-item--c4" >
+            								<i class="fas fa-user-tie" ></i>
+            								</div>
+            							<h5 class="text-white" ><span class="text-prary h4 font-weight-bold" >3</span> Petugas</h5>
+            								</div>            				
+            								
+      
+            								<div class="col-md-3 col-sm-6" >
+            								<div class="card overview-item--c3 msyc" >
+            								<i class="fas fa-users" ></i>
+            								</div>
+            								<h5 class="text-white msy" ><span class="text-gay h4 font-weight-bold" >3</span> Masyarakat</h5>
+            								</div>
+            								
+            								<div class="col-md-3 col-sm-6" data-toggle="modal" data-target="#add">
+            								<div class="card overview-item--c2 plus" >
+            								<i class="fas fa-user-plus " ></i>
+            								</div>
+            								<h5 class="text-white mt-1" >Tambah User</h5>
+            								</div>
+            		
+            								</div>
+            							</div>
+
+            		
+                               
+       
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+            <!-- END BREADCRUMB-->
+</div>
+<aside class="menu-sidebar2 js-right-sidebar">
+    
+    <div class="logo bg-info">
+        <a href="#">
+        				<h4 class="text-white" ><i class="fas fa-file-signature ml-1 mr-2" ></i>PeopleReport</h4>
+        </a>
+    </div>
+
+    <div class="menu-sidebar2__content js-scrollbar2">
+        <div class="account2">
+            <div class="image img-cir img-120">
+                <img src="assets/img/img1.jpg" alt="admin" />
+            </div>
+            <h4 class="name">Hayomi</h4>
+            <a class="logout" href="index.php/auth/logout">Log out</a>
+        
+        </div>
+        <nav class="navbar-sidebar2">
+            <ul class="list-unstyled navbar__list">
+            	<li class="active" >
+            	<a href="#!">
+            	<i class="fas fa-tachometer-alt"></i>Dashboard</a>        
+            	</li>
+                <li class="has-sub">
+                    <a class="js-arrow" href="#!">
+                        <i class="fas fa-newspaper"></i>Pengaduan
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="#!">
+                                <i class="fas fa-file-import"></i>Pengaduan Masuk</a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <i class="fas fa-question-circle"></i>Belum Terverifikasi</a>
+                        </li>
+                        <li>
+                        <a href="#!">
+                        <i class="fas fa-check-circle"></i>Telah Terverifikasi</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="has-sub">
+                <a class="js-arrow" href="#">
+                <i class="fas fa-table"></i>Tabel
+                <span class="arrow">
+                <i class="fas fa-angle-down"></i>
+                </span>
+                </a>
+                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                <li>
+               <a href="#!">
+                <i class="fas fa-user-tie"></i>Petugas</a>
+                </li>
+                <li>
+               <a href="#!">
+                <i class="fas fa-users"></i>Masyarakat</a>
+                </li>
+                </ul>
+                </li>
+				
+				<li>
+				<a href="#!">
+				<i class="fas fa-user-edit"></i>Edit Profil</a>
+				</li>      
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- END HEADER DESKTOP-->
+            
+            
+
+
+
+<section class="foot" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright">
+                    <p>Copyright &copy; <a href="https://github.com/ricky03knowhere" >ricky03knowhere</a> 2020. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Jquery JS-->
+<script src="assets/vendor/cooladmin/vendor/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap JS-->
+<script src="assets/vendor/cooladmin/vendor/bootstrap-4.1/popper.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+
+<script src="assets/vendor/cooladmin/vendor/slick/slick.min.js">
+</script>
+<script src="assets/vendor/cooladmin/vendor/wow/wow.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/animsition/animsition.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+</script>
+<script src="assets/vendor/cooladmin/vendor/counter-up/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/counter-up/jquery.counterup.min.js">
+</script>
+<script src="assets/vendor/cooladmin/vendor/circle-progress/circle-progress.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="assets/vendor/cooladmin/vendor/chartjs/Chart.bundle.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/select2/select2.min.js">
+</script>
+<script src="assets/vendor/cooladmin/vendor/vector-map/jquery.vmap.js"></script>
+<script src="assets/vendor/cooladmin/vendor/vector-map/jquery.vmap.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/vector-map/jquery.vmap.sampledata.js"></script>
+<script src="assets/vendor/cooladmin/vendor/vector-map/jquery.vmap.world.js"></script>
+<script src="assets/vendor/cooladmin/vendor/sweetalert/sweetalert2.all.min.js"></script>
+
+<!-- Data Table scripts -->
+<script src="assets/vendor/cooladmin/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="assets/vendor/cooladmin/vendor/datatables-demo.js"></script>
+
+
+<!-- Main JS-->
+<script src="assets/vendor/cooladmin/js/main.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
+<!-- end document-->
